@@ -48,7 +48,7 @@
 			<tr>
 				<td>Jenis Kelamin</td>
 				<td>:</td>
-				<td><?= $s['lk']; ?></td>
+				<td><?= $s['jk']; ?></td>
 			</tr>
 			<tr>
 				<td>Alamat</td>
