@@ -449,7 +449,7 @@
                     success: function(json) {
                         if (json.status == 'success') {
                             Swal({
-                                html: "Tanda tangan berhasil diupload",
+                                html: "Logo berhasil diupload",
                                 type: 'success',
 
                             }).then(function() {
