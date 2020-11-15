@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui"
+		/>
+		<title>Zinzer - Responsive Bootstrap 4 Admin Dashboard</title>
+		<meta content="Admin Dashboard" name="description" />
+		<meta content="ThemeDesign" name="author" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+		<!-- morris css -->
+		<link rel="stylesheet" href="../plugins/morris/morris.css" />
+
+		<link
+			href="assets/css/bootstrap.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body class="fixed-left">
+		<!-- Loader -->
+		<div id="preloader">
+			<div id="status">
+				<div class="spinner">
+					<div class="rect1"></div>
+					<div class="rect2"></div>
+					<div class="rect3"></div>
+					<div class="rect4"></div>
+					<div class="rect5"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Begin page -->
+		<div id="wrapper">
+			<!-- ========== Left Sidebar Start ========== -->
+			<div class="left side-menu">
+				<button
+					type="button"
+					class="button-menu-mobile button-menu-mobile-topbar open-left waves-effect"
+				>
+					<i class="mdi mdi-close"></i>
+				</button>
+
+				<div class="left-side-logo d-block d-lg-none">
+					<div class="text-center">
+						<a href="index.html" class="logo"
+							><img src="assets/images/logo_dark.png" height="20" alt="logo"
+						/></a>
+					</div>
+				</div>
+
+				<div class="sidebar-inner slimscrollleft">
+					<div id="sidebar-menu">
+						<ul>
+							<li class="menu-title">MAIN</li>
+
+							<li>
+								<a href="index.html" class="waves-effect">
+									<i class="fab fa-windows"></i>
+									<span>
+										Dashboard</span
+									>
+								</a>
+							</li>
+							<li class="menu-title">MASTER DATA</li>
+							<li class="has_sub">
+								<a href="javascript:void(0);" class="waves-effect"
+									><i class="fas fa-user-alt"></i> <span> Siswa </span>
+									<span class="menu-arrow float-right"
+										><i class="mdi mdi-chevron-right"></i></span
+								></a>
+								<ul class="list-unstyled">
+									<li><a href="ui-alerts.html">Tambah Siswa</a></li>
+									<li><a href="ui-badge.html">Data Siswa</a></li>
+								</ul>
+							</li>
+							<li class="has_sub">
+								<a href="javascript:void(0);" class="waves-effect"
+									><i class="fas fa-chalkboard-teacher"></i>
+									<span> Guru </span>
+									<span class="menu-arrow float-right"
+										><i class="mdi mdi-chevron-right"></i></span
+								></a>
+								<ul class="list-unstyled">
+									<li><a href="ui-alerts.html">Tambah Guru</a></li>
+									<li><a href="ui-badge.html">Data Guru</a></li>
+								</ul>
+							</li>
+							<li class="has_sub">
+								<a href="javascript:void(0);" class="waves-effect"
+									><i class="fas fa-address-card"></i>
+									<span> Kelas </span>
+									<span class="menu-arrow float-right"
+										><i class="mdi mdi-chevron-right"></i></span
+								></a>
+								<ul class="list-unstyled">
+									<li><a href="ui-alerts.html">Tambah Kelas</a></li>
+									<li><a href="ui-badge.html">Data Kelas</a></li>
+								</ul>
+							</li>
+							<li class="has_sub">
+								<a href="javascript:void(0);" class="waves-effect"
+									><i class="fas fa-sitemap"></i>
+									<span> Jurusan </span>
+									<span class="menu-arrow float-right"
+										><i class="mdi mdi-chevron-right"></i></span
+								></a>
+								<ul class="list-unstyled">
+									<li><a href="ui-alerts.html">Tambah Jurusan</a></li>
+									<li><a href="ui-badge.html">Data Jurusan</a></li>
+								</ul>
+							</li>
+							<li class="menu-title">MANAGEMENT BELAJAR</li>
+							<li class="has_sub">
+								<a href="javascript:void(0);" class="waves-effect"
+									><i class="fas fa-book"></i> <span> Materi </span>
+									<span class="menu-arrow float-right"
+										><i class="mdi mdi-chevron-right"></i></span
+								></a>
+								<ul class="list-unstyled">
+									<li><a href="ui-alerts.html">Tambah Materi</a></li>
+									<li><a href="ui-badge.html">Data Materi</a></li>
+								</ul>
+							</li>
+							<li class="has_sub">
+								<a href="javascript:void(0);" class="waves-effect"
+									><i class="fas fa-edit"></i>
+									<span> Ulangan </span>
+									<span class="menu-arrow float-right"
+										><i class="mdi mdi-chevron-right"></i></span
+								></a>
+								<ul class="list-unstyled">
+									<li><a href="ui-alerts.html">Tambah Ulangan</a></li>
+									<li><a href="ui-badge.html">Data Ulangan</a></li>
+								</ul>
+							</li>
+							</li>
+							<li class="has_sub">
+								<a href="javascript:void(0);" class="waves-effect"
+									><i class="fas fa-bullhorn"></i>
+									<span> Pengumuman </span>
+									<span class="menu-arrow float-right"
+										><i class="mdi mdi-chevron-right"></i></span
+								></a>
+								<ul class="list-unstyled">
+									<li><a href="ui-alerts.html">Tambah Pengumuman</a></li>
+									<li><a href="ui-badge.html">Data Pengumuman</a></li>
+								</ul>
+							</li>
+							<li class="has_sub">
+								<a href="javascript:void(0);" class="waves-effect"
+									><i class="fas fa-clock"></i>
+									<span> Jadwal </span>
+									<span class="menu-arrow float-right"
+										><i class="mdi mdi-chevron-right"></i></span
+								></a>
+								<ul class="list-unstyled">
+									<li><a href="ui-alerts.html">Jadwal Materi</a></li>
+									<li><a href="ui-badge.html">Jadwal Ulangan</a></li>
+								</ul>
+              </li>
+              <li>
+								<a href="a" class="waves-effect">
+									<i class="fas fa-calendar-alt"></i>
+									<span>
+										Kalender</span
+									>
+								</a>
+							</li>
+							<li class="menu-title">SETTING</li>							
+              <li>
+								<a href="a" class="waves-effect">
+									<i class="fas fa-cogs"></i>
+									<span>
+										Settings</span
+									>
+								</a>
+							</li>
+              <li>
+								<a href="a" class="waves-effect">
+									<i class="fas fa-sign-out-alt"></i>
+									<span>
+										Logout</span
+									>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<!-- end sidebarinner -->
+			</div>
+			<!-- Left Sidebar End -->
+
+			<!-- Start right Content here -->
+
+			<div class="content-page">
+				<!-- Start content -->
+				<div class="content">
+					<!-- Top Bar Start -->
+					<div class="topbar">
+						<div class="topbar-left d-none d-lg-block">
+							<div class="text-center">
+								<a href="index.html" class="logo"
+									><img src="assets/images/logo.png" height="22" alt="logo"
+								/></a>
+							</div>
+						</div>
+
+						<nav class="navbar-custom bg-success">
+							<ul class="list-inline float-right mb-0">
+								<li
+									class="list-inline-item dropdown notification-list nav-user"
+								>
+									<a
+										class="nav-link dropdown-toggle arrow-none waves-effect"
+										data-toggle="dropdown"
+										href="#"
+										role="button"
+										aria-haspopup="false"
+										aria-expanded="false"
+									>
+										<img
+											src="assets/images/users/avatar-6.jpg"
+											alt="user"
+											class="rounded-circle"
+										/>
+										<span class="d-none d-md-inline-block ml-1"
+											>David M. Bailey <i class="mdi mdi-chevron-down"></i>
+										</span>
+									</a>
+									<div
+										class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown"
+									>
+										<a class="dropdown-item" href="#"
+											><i class="dripicons-user text-muted"></i> Profile</a
+										>
+										<a class="dropdown-item" href="#"
+											><i class="dripicons-wallet text-muted"></i> My Wallet</a
+										>
+										<a class="dropdown-item" href="#"
+											><span class="badge badge-success float-right m-t-5"
+												>5</span
+											><i class="dripicons-gear text-muted"></i> Settings</a
+										>
+										<a class="dropdown-item" href="#"
+											><i class="dripicons-lock text-muted"></i> Lock screen</a
+										>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#"
+											><i class="dripicons-exit text-muted"></i> Logout</a
+										>
+									</div>
+								</li>
+							</ul>
+
+							<ul class="list-inline menu-left mb-0">
+								<li class="list-inline-item">
+									<button
+										type="button"
+										class="button-menu-mobile open-left waves-effect"
+									>
+										<i class="mdi mdi-menu"></i>
+									</button>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!-- Top Bar End -->
+
+					<div class="page-content-wrapper">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="page-title-box">
+										<div class="row align-items-center">
+											<div class="col-md-8">
+												<h4 class="page-title m-0">Dashboard</h4>
+											</div>											
+										</div>
+										<!-- end row -->
+									</div>
+									<!-- end page-title-box -->
+								</div>
+							</div>
+							<!-- end page title -->
+
+							<div class="row">
+								<div class="col-xl-3 col-md-6">
+									<div class="card bg-primary mini-stat text-white">
+										<div class="p-3 mini-stat-desc">
+											<div class="clearfix">
+												<h6
+													class="text-uppercase mt-0 float-left text-white-50"
+												>
+													Orders
+												</h6>
+												<h4 class="mb-3 mt-0 float-right">1,587</h4>
+											</div>
+											<div>
+												<span class="badge badge-light text-info"> +11% </span>
+												<span class="ml-2">From previous period</span>
+											</div>
+										</div>
+										<div class="p-3">
+											<div class="float-right">
+												<a href="#" class="text-white-50"
+													><i class="mdi mdi-cube-outline h5"></i
+												></a>
+											</div>
+											<p class="font-14 m-0">Last : 1447</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xl-3 col-md-6">
+									<div class="card bg-info mini-stat text-white">
+										<div class="p-3 mini-stat-desc">
+											<div class="clearfix">
+												<h6
+													class="text-uppercase mt-0 float-left text-white-50"
+												>
+													Revenue
+												</h6>
+												<h4 class="mb-3 mt-0 float-right">$46,785</h4>
+											</div>
+											<div>
+												<span class="badge badge-light text-danger">
+													-29%
+												</span>
+												<span class="ml-2">From previous period</span>
+											</div>
+										</div>
+										<div class="p-3">
+											<div class="float-right">
+												<a href="#" class="text-white-50"
+													><i class="mdi mdi-buffer h5"></i
+												></a>
+											</div>
+											<p class="font-14 m-0">Last : $47,596</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 col-md-6">
+									<div class="card bg-pink mini-stat text-white">
+										<div class="p-3 mini-stat-desc">
+											<div class="clearfix">
+												<h6
+													class="text-uppercase mt-0 float-left text-white-50"
+												>
+													Average Price
+												</h6>
+												<h4 class="mb-3 mt-0 float-right">15.9</h4>
+											</div>
+											<div>
+												<span class="badge badge-light text-primary"> 0% </span>
+												<span class="ml-2">From previous period</span>
+											</div>
+										</div>
+										<div class="p-3">
+											<div class="float-right">
+												<a href="#" class="text-white-50"
+													><i class="mdi mdi-tag-text-outline h5"></i
+												></a>
+											</div>
+											<p class="font-14 m-0">Last : 15.8</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xl-3 col-md-6">
+									<div class="card bg-success mini-stat text-white">
+										<div class="p-3 mini-stat-desc">
+											<div class="clearfix">
+												<h6
+													class="text-uppercase mt-0 float-left text-white-50"
+												>
+													Product Sold
+												</h6>
+												<h4 class="mb-3 mt-0 float-right">1890</h4>
+											</div>
+											<div>
+												<span class="badge badge-light text-info"> +89% </span>
+												<span class="ml-2">From previous period</span>
+											</div>
+										</div>
+										<div class="p-3">
+											<div class="float-right">
+												<a href="#" class="text-white-50"
+													><i class="mdi mdi-briefcase-check h5"></i
+												></a>
+											</div>
+											<p class="font-14 m-0">Last : 1776</p>
+										</div>
+									</div>
+								</div>
+							</div>
+              <!-- end row -->
+            </div>
+						<!-- container fluid -->
+					</div>
+					<!-- Page content Wrapper -->
+				</div>
+				<!-- content -->
+
+				<footer class="footer">
+					© 2019 Zinzer
+					<span class="d-none d-md-inline-block">
+						- Crafted with <i class="mdi mdi-heart text-danger"></i> by
+						Themesdesign.</span
+					>
+				</footer>
+			</div>
+			<!-- End Right content here -->
+		</div>
+		<!-- END wrapper -->
+
+		<!-- jQuery  -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/modernizr.min.js"></script>
+		<script src="assets/js/detect.js"></script>
+		<script src="assets/js/fastclick.js"></script>
+		<script src="assets/js/jquery.slimscroll.js"></script>
+		<script src="assets/js/jquery.blockUI.js"></script>
+		<script src="assets/js/waves.js"></script>
+		<script src="assets/js/jquery.nicescroll.js"></script>
+		<script src="assets/js/jquery.scrollTo.min.js"></script>
+
+		<!--Morris Chart-->
+		<script src="../plugins/morris/morris.min.js"></script>
+		<script src="../plugins/raphael/raphael.min.js"></script>
+
+		<!-- dashboard js -->
+		<script src="assets/pages/dashboard.int.js"></script>
+
+		<!-- App js -->
+		<script src="assets/js/app.js"></script>
+	</body>
+</html>

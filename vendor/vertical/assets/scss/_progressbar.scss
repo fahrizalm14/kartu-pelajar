@@ -1,0 +1,11 @@
+/* ==============
+  Progressbar
+===================*/
+
+.progress{
+  background-color: lighten($dark, 8%);
+}
+
+.progress-bar {
+  background-color: $primary;
+}

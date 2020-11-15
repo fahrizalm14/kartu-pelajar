@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+        Options -Indexes
+        RewriteEngine on
+        # SecFilterEngine Off
+        # SecFilterScanPOST Off
+        DirectoryIndex index.php
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        <IfModule mod_php5.c>
+                RewriteRule ^(.*)$ index.php/$1 [L]
+        </IfModule>
+        <IfModule !mod_php5.c>
+                RewriteRule ^(.*)$ index.php?/$1 [L]
+        </IfModule>
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+        ErrorDocument 404 /index.php
+</IfModule>

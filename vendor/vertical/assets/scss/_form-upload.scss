@@ -1,0 +1,15 @@
+/* ==============
+  Form-Upload
+===================*/
+
+/* Dropzone */
+.dropzone {
+  min-height: 230px;
+  border: 2px dashed rgba($white, 0.1);
+  background: lighten($dark, 8%);
+  border-radius: 6px;
+
+  .dz-message {
+    font-size: 22px;
+  }
+}

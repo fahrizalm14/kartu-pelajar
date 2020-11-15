@@ -1,0 +1,16 @@
+
+/* ==============
+    footer
+===================*/
+
+.footer {
+  background-color: lighten($dark, 6%);
+  font-size: 13px;
+  bottom: 0;
+  color: $light;
+  text-align: center;
+  padding: 20px 0px;
+  position: absolute;
+  right: 0;
+  left: 0px;
+}
