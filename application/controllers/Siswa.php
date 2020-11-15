@@ -218,9 +218,9 @@ class Siswa extends CI_Controller
                     $json = 'failed';
                 } else {
                     $datasimpan = [
-                        'nis' => $nis,
                         'nama' => $nama,
                         'jk' => $jk,
+                        'nis' => $nis,
                         'tempat_lahir' => $tempat_lahir,
                         'tanggal_lahir' => htmlspecialchars($tanggal_lahir),
                         'alamat' => $alamat,
@@ -301,25 +301,18 @@ class Siswa extends CI_Controller
     public function print($id)
     {
         $data = $this->Sekolah_model->get_by_id();
-        $id = $data['id_desain'];
-        if ($id == 1) {
-            $this->print1($id);
+        $ids = $data['id_desain'];
+        if ($ids == 1) {
+            $data['sekolah'] = $this->Sekolah_model->get_by_id();
+            $data['s'] = $this->Siswa_model->get_by_id($id);
+            $this->load->view('print', $data);
         } else {
-            $this->print2($id);
+            $data['sekolah'] = $this->Sekolah_model->get_by_id();
+            $data['s'] = $this->Siswa_model->get_by_id($id);
+            $this->load->view('print2', $data);
         }
     }
-    public function print1($id)
-    {
-        $data['sekolah'] = $this->Sekolah_model->get_by_id();
-        $data['s'] = $this->Siswa_model->get_by_id($id);
-        $this->load->view('print', $data);
-    }
-    public function print2($id)
-    {
-        $data['sekolah'] = $this->Sekolah_model->get_by_id();
-        $data['s'] = $this->Siswa_model->get_by_id($id);
-        $this->load->view('print2', $data);
-    }
+
 
     public function hapus_data_siswa($id)
     {
